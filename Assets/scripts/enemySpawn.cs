@@ -13,7 +13,6 @@ public class enemySpawn : MonoBehaviour {
 	private GameObject[] enemies;
 
 
-
 	// Use this for initialization
 	void Start () 
 	{

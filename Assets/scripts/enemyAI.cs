@@ -33,6 +33,10 @@ public class enemyAI : MonoBehaviour {
 			touchRightWall = false;
 			Debug.Log ("Touched left wall");
 		}
+
+		if (col.gameObject.tag == "Player") {
+			Destroy (col.gameObject);
+		} 
 	}
 
 }
