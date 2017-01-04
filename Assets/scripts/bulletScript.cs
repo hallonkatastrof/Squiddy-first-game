@@ -3,20 +3,19 @@ using System.Collections;
 
 public class bulletScript : MonoBehaviour {
 
-	public float bulletSpeed = 100f;
+	public float bulletSpeed = 100;
 	private Vector2 mousePos;
 	private Vector3 playerPos;
 	public Transform bullet;
+	public static int currentScore;
+
 
 
 	// Use this for initialization
-	void Start () {
 
-	}
 
 	// Update is called once per frame
 	void Update () {
-
 
 		if (mousePos.x > playerPos.x) {
 			transform.position += Vector3.right * Time.deltaTime * bulletSpeed;
@@ -35,8 +34,13 @@ public class bulletScript : MonoBehaviour {
 	if (col.gameObject.tag == "Enemy") {
 		Destroy (col.gameObject);
 			Destroy (bullet);
+			currentScore += 1;
+
 	}
-		if (col.gameObject.tag == "Wall") 
+		if (col.gameObject.tag == "RightWall") 
+		{
+			Destroy (bullet);
+		} else if (col.gameObject.tag == "LeftWall") 
 		{
 			Destroy (bullet);
 		}

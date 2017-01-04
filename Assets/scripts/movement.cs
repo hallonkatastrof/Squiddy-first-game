@@ -21,7 +21,7 @@ public class movement : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		mousePos = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
-		playerPos = GameObject.Find ("squiddy").transform.position;
+		playerPos = GameObject.FindGameObjectWithTag ("Player").transform.position;
 
 		var move = new Vector3(Input.GetAxis ("Horizontal"), 0);
 		transform.position += move * speed * Time.smoothDeltaTime; 
