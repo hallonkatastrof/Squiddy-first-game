@@ -46,11 +46,13 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\scripts\bulletScript.cs" />
-     <Compile Include="Assets\scripts\color.cs" />
      <Compile Include="Assets\scripts\enemyAI.cs" />
      <Compile Include="Assets\scripts\enemyRespawn.cs" />
      <Compile Include="Assets\scripts\enemySpawn.cs" />
+     <Compile Include="Assets\scripts\levelTextScript.cs" />
      <Compile Include="Assets\scripts\movement.cs" />
+     <Compile Include="Assets\scripts\restartButtonScript.cs" />
+     <Compile Include="Assets\scripts\scoreScript.cs" />
      <Compile Include="Assets\scripts\spawnScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
